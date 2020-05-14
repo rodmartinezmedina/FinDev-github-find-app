@@ -9,6 +9,7 @@ class App extends Component {
   state = {
     users: [],
     loading: false,
+    alert: null,
   };
 
   //OPTION 1 GET INITIAL USERS (NO API KEY)
