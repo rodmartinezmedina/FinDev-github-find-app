@@ -21,7 +21,7 @@ class App extends Component {
 
     const res = await axios.get('https://api.github.com/users')
     
-    this.setState({ users: res.data, oading: false })
+    this.setState({ users: res.data, loading: false })
     console.log(res.data)
 
   }
