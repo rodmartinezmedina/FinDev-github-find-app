@@ -1,36 +1,40 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-
-
-const UserItem = ({user: { login, avatar_url, html_url}}) => {
+const UserItem = ({ user: { login, avatar_url, html_url } }) => {
   //OPTION 2 RO PASS THE PROPS
-// const UserItem = (props) => {
+  // const UserItem = (props) => {
   // const { login, avatar_url, html_url } = props.user;
 
   return (
     <div className="card text-center">
-      <img 
-        src={avatar_url} 
-        className="round-img" 
-        style={{ width: '70px' }} 
+      <img
+        src={avatar_url}
+        className="round-img"
+        style={{
+          width: "70px",
+        }}
         alt="user-pic"
       />
-      <h3>{login}</h3>
+      <h3> {login} </h3>
 
       <div>
-        <a href={html_url} className="btn btn-dark btn-sm my-1">More</a>
-        
+        <Link to={`user/${login}`} className="btn btn-primary btn-sm my">
+          More Info
+        </Link>
       </div>
-
+      <div>
+        <a href={html_url} className="btn btn-dark btn-sm">
+          Github page
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 UserItem.propTypes = {
-  user: PropTypes.object.isRequired
-
-}
-
+  user: PropTypes.object.isRequired,
+};
 
 export default UserItem;
