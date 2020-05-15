@@ -94,7 +94,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Navbar title="Github Finder" icon="fab fa-github" />
+          <Navbar title="FinDev" icon="fab fa-github" />
           <div className="container">
             <Alert alert={this.state.alert} />
             <Switch>

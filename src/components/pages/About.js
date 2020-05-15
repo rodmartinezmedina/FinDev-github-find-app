@@ -3,7 +3,12 @@ import React, { Fragment } from "react";
 const About = () => {
   return (
     <Fragment>
-      <h1> About this app </h1> <p> App to search github users </p>
+      <h1> About this app </h1>
+      <p> A simple app to find Github Users with the use of Github 's API </p>
+
+      <a href="https://developer.github.com/v3/" target="_blank">
+        https://developer.github.com/v3/
+      </a>
       <p> Version: 1.0 </p>
     </Fragment>
   );
