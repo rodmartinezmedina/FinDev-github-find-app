@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Fragment>
       <h1> About this app </h1>
-      <p> A simple app to find Github Users with the use of Github 's API </p>
+      <p> A simple app to find Devs on Github with the use of Github 's API </p>
 
       <a href="https://developer.github.com/v3/" target="_blank">
         https://developer.github.com/v3/

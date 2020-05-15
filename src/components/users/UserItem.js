@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const UserItem = ({ user: { login, avatar_url, html_url } }) => {
+const UserItem = ({ user: { login, name, avatar_url, html_url } }) => {
   //OPTION 2 RO PASS THE PROPS
   // const UserItem = (props) => {
   // const { login, avatar_url, html_url } = props.user;
@@ -17,8 +17,7 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         }}
         alt="user-pic"
       />
-      <h3> {login} </h3>
-
+      <h3> {login} </h3> <p> {name} </p>
       <div>
         <Link to={`user/${login}`} className="btn btn-primary btn-sm my">
           More Info
